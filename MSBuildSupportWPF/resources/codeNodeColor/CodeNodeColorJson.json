@@ -1,0 +1,75 @@
+[
+  {
+    "name": "AttributeNode",
+    "ColorRGB": {
+      "R": 127,
+      "G": 255,
+      "B": 212
+    }
+  },
+  {
+    "name": "BracketNode",
+    "ColorRGB": {
+      "R": 128,
+      "G": 128,
+      "B": 128
+    }
+  },
+  {
+    "name": "CommentNode",
+    "ColorRGB": {
+      "R": 128,
+      "G": 128,
+      "B": 128
+    }
+  },
+  {
+    "name": "ParameterNode",
+    "ColorRGB": {
+      "R": 0,
+      "G": 255,
+      "B": 0
+    }
+  },
+  {
+    "name": "SpaceNode",
+    "ColorRGB": {
+      "R": 128,
+      "G": 128,
+      "B": 128
+    }
+  },
+  {
+    "name": "SpecialNode",
+    "ColorRGB": {
+      "R": 0,
+      "G": 255,
+      "B": 0
+    }
+  },
+  {
+    "name": "TagBodyNode",
+    "ColorRGB": {
+      "R": 128,
+      "G": 128,
+      "B": 128
+    }
+  },
+  {
+    "name": "TagNode",
+    "ColorRGB": {
+      "R": 0,
+      "G": 255,
+      "B": 255
+    }
+  },
+  {
+    "name": "WhiteSpaceNode",
+    "ColorRGB": {
+      "R": 128,
+      "G": 128,
+      "B": 128
+    }
+  }
+
+]

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "MSBuildSupportWPF": {
+      "commandName": "Project",
+      "nativeDebugging": false,
+      "sqlDebugging": true
+    }
+  }
+}

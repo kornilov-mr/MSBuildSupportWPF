@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+    <!-- Target framework (e.g., net6.0, net7.0, netstandard2.1, etc.) -->
+    <TargetFramework>net7.0</TargetFramework>
+     <!-- Enable nullable reference types for better null safety -->
+    <Nullable>enable</Nullable>
+     <!-- Enable implicit using directives -->
+    <ImplicitUsings>enable</ImplicitUsings>
+     <!-- Treat warnings as errors -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+     <!-- Define the output type as Exe for console apps, or Library for class libraries -->
+    <OutputType>Exe</OutputType>
+     <!-- Enable optimization for Release mode builds -->
+    <Optimize>true</Optimize>
+     <!-- Allow debugging -->
+    <DebugType>portable</DebugType>
+  </PropertyGroup>>>>>>
+   <ItemGroup>
+    <!-- Reference any required NuGet packages -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+  </ItemGroup>
+   <ItemGroup>
+    <!-- Specify project references -->
+    <ProjectReference Include="..\MyOtherProject\MyOtherProject.csproj" />
+  </ItemGroup>
+   <ItemGroup>
+    <!-- Include files as content in the output -->
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'='Debug|AnyCPU'">
+    <!-- Additional settings for Debug configuration -->
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'='Release|AnyCPU'">
+    <!-- Additional settings for Release configuration -->
+    <DefineConstants>RELEASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+ </Project>
+
