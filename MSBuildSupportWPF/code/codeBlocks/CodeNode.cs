@@ -64,7 +64,7 @@ public abstract class CodeNode
         CodePart = new string(' ', lenght);
 
         CodeRun.Foreground = new SolidColorBrush(GetMediaColor());
-
+        CodeRun.FontSize = 15;
     }
     protected CodeNode(int lenght, int position, Color hightLightColor, string codePart)
     {
@@ -74,7 +74,7 @@ public abstract class CodeNode
         CodePart = codePart;
 
         CodeRun.Foreground = new SolidColorBrush(GetMediaColor());
-
+        CodeRun.FontSize = 15;
     }
     //Revalidation only in this node, can lead to mismatch real offset on screen and offset in this code node
     protected void RevalidatePositionBasedOnParent()

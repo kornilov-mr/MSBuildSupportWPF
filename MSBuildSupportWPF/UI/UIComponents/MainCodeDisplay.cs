@@ -164,8 +164,8 @@ namespace MSBuildSupportWPF.UI.UIComponents
             Point screenPosition = this.PointToScreen(new Point(startPointerRect.X, startPointerRect.Y));
             ErrorPopup.LoadError(e);
 
-            ErrorPopup.HorizontalOffset = startPointerRect.X+10;
-            ErrorPopup.VerticalOffset = startPointerRect.Y- this.ActualHeight+10;
+            ErrorPopup.HorizontalOffset = startPointerRect.X+30;
+            ErrorPopup.VerticalOffset = startPointerRect.Y- this.ActualHeight+30;
 
             ErrorPopup.IsOpen = true;
         }
